@@ -2,14 +2,28 @@
 * {
     box-sizing: border-box;
 }
-
-@media screen and (max-width: 750px) {
-  #restaurants-list li {
-  	width: 100%;
+@media only screen and (max-width: 600px) {
+  nav h1 a {
+    font-size: 0.7em;
+  }
+  nav {
+    padding-top: 20px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 200px;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  #restaurants-list li {
+  	width: 100%;
+  }
+  nav h1 a {
+    font-size: 1em;
+  }
+  nav {
+    padding-top: 20px;
+  }
   #restaurants-list li {
     width: 270px;
   }
@@ -18,5 +32,83 @@
   }
 }
 
+@media only screen and (min-width: 750px) {
+
+  #restaurants-list li {
+    width: 250px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 180px;
+  }
+  nav {
+    padding-top: 25px;
+  }
+}
+@media only screen and (min-width: 875px) {
+  main, .header {
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*
+@media only screen and (min-width: 1245px) {
+  main, .header {
+    width: 1245px;
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+}
+
+
+
 
 /* ====================== Restaurant Details ====================== */
+/*
+@media screen and (max-width: 600px) {
+  .inside #map-container {
+  	height: 300px;
+  }
+
+  #restaurant-container, #reviews-container {
+    padding: 30px 40px 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .inside #map-container {
+  	height: 350px;
+  }
+
+  #restaurant-container, #reviews-container {
+    padding: 30px 40px 30px;
+  }
+
+  #restaurant-name {
+    font-size: 4vw;
+  }
+}
+/
+@media screen and (min-width: 800px) {
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+  	/* height: 650px; */
+    /* position: fixed; */
+  	/* position: relative; */
+    /* right: 0; */
+    /* top: 80px; */
+    /* width: 50%; */
+  	/* width: 100%; */
+  	/* min-width: 100%; */
+  	/* max-width: 100%; */
+  	/* display: block; */
+  /* } */
+  /* #restaurant-container, #reviews-container { */
+    /* border-bottom: 1px solid #d9d9d9; */
+    /* border-top: 1px solid #fff; */
+    /* padding: 100px 40px 30px; */
+    /* width: 50%; */
+  	/* max-width: 100%; */
+  /* } */
+/* } */
