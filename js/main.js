@@ -96,8 +96,10 @@ initMap = () => {
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
   }).addTo(newMap);
-
   updateRestaurants();
+  const map = document.getElementById('map');
+  map.setAttribute('role', 'application');
+  map.setAttribute('aria-label', 'application');
 }
 /* window.initMap = () => {
   let loc = {
